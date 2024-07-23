@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92be0d7e-a56a-4b2c-8c57-1551bbb1410a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Session06-luyen-tap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/design/IClassesDesign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/design/IGenericCrud.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/design/IStudentDesign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/designimpl/ClassesImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/designimpl/StudentImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/entity/Classes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/entity/Students.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/run/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/util/InputMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ra/util/MyArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ra/entity/ClassWithStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/design/IGenericCrud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/design/IGenericCrud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/designimpl/ClassesImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/designimpl/ClassesImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/designimpl/StudentImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/designimpl/StudentImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/entity/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/entity/Students.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ra/run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ra/run/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,8 +42,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -78,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721708056750</updated>
-      <workItem from="1721708057832" duration="7344000" />
+      <workItem from="1721708057832" duration="11124000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,16 @@
 package ra.run;
 
 import ra.design.IClassesDesign;
+import ra.design.IStudentDesign;
 import ra.designimpl.ClassesImplement;
+import ra.designimpl.StudentImplement;
 import ra.entity.Classes;
+import ra.entity.Students;
 import ra.util.InputMethods;
 
 public class Main {
     private static IClassesDesign classDesign = new ClassesImplement();
+    private static IStudentDesign studentDesign = new StudentImplement();
 
     public static void main(String[] args) {
         // hiển thị menu tổng
@@ -55,10 +59,28 @@ public class Main {
                     System.out.println("Thêm ới thành công");
                     break;
                 case 3:
+                    System.out.println("Nhập id của lớp cần sửa thông tin");
+                    String idEdit = InputMethods.getString();
+                    // lấy ra thoogn tin cu
+                    Classes oldClass = classDesign.findById(idEdit);
+                    if (oldClass==null){
+                        System.err.println("ID ko tồn tại");
+                    }else {
+                        // chỉnh suwar thông tin
+                        System.out.println("Thông tin cũ");
+                        oldClass.print();
+                        System.out.println("Nhập tên lớp mới");
+                        oldClass.setClassName(InputMethods.getString());
+
+                        classDesign.update(oldClass);
+                    }
 
                     break;
                 case 4:
-
+                    // xóa nhập id của lớp cần xóa
+                    System.out.println("Nhập id lớp cần xóa");
+                    String idDel = InputMethods.getString();
+                    classDesign.delete(idDel);
                     break;
                 case 5:
                     break;
@@ -78,10 +100,13 @@ public class Main {
             byte choice = InputMethods.getByte();
             switch (choice) {
                 case 1:
-
+                    studentDesign.display();
                     break;
                 case 2:
-
+                    // thêmmowisi
+                    Students s = new Students();
+                    s.inputData();
+                    studentDesign.add(s);
                     break;
                 case 3:
 
@@ -90,6 +115,7 @@ public class Main {
 
                     break;
                 case 5:
+                    studentDesign.getClassWithTotalStudents();
                     break;
                 case 6:
                     break;
