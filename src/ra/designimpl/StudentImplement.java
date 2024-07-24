@@ -5,10 +5,12 @@ import ra.entity.ClassWithStudent;
 import ra.entity.Classes;
 import ra.entity.Students;
 import ra.util.MyArray;
+import ra.util.MyArrayEasy;
+
 import  static ra.designimpl.ClassesImplement.classList;
 
 public class StudentImplement implements IStudentDesign {
-    private static MyArray<Students> studentList =  new MyArray<>();
+    private static MyArrayEasy<Students> studentList =  new MyArrayEasy<>();
     static {
         // khởi tạo dữ liệu mẫu
         Classes c1 = new Classes("C0001","JV240304");
@@ -60,6 +62,30 @@ public class StudentImplement implements IStudentDesign {
             }
         }
         return -1;
+    }
+
+    @Override
+    public void getClassWithTotalStudentsEasy() {
+        // cách dễ hon
+        // đếm số lượng sinh viên theo mã lớp học
+        // duyet từng class để tính số sinh viên cua từng lớp
+        for (int i = 0; i < classList.size(); i++) {
+            Classes element = classList.get(i);
+            int count = countTotalStudentByClasses(element.getClassId());
+            System.out.printf("|Classname : %-10s| TotalStudent : %-4s |\n",element.getClassName(),count);
+        }
+
+    }
+
+    private static int countTotalStudentByClasses(String classId) {
+        int count = 0;
+        for (int i =0; i< studentList.size(); i++){
+            Students element = studentList.get(i); // lấy ra ptu dang duyệt tại ví trí
+            if (element.getClasses().getClassId().equals(classId)){
+                count++;
+            }
+        }
+        return count;
     }
 
     @Override

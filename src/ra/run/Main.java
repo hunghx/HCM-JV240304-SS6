@@ -115,7 +115,7 @@ public class Main {
 
                     break;
                 case 5:
-                    studentDesign.getClassWithTotalStudents();
+                    studentDesign.getClassWithTotalStudentsEasy();
                     break;
                 case 6:
                     break;

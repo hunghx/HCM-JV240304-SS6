@@ -86,7 +86,5 @@ public class Students {
         if (index>=1 && index <= classList.size()){
             this.classes = classList.get(index-1);
         }
-
     }
-
 }
